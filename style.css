@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+.editor-free, .editor-pro {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 48%;
+}
+button {
+  background: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pro-locked {
+  background: #ccc !important;
+}
+#upgrade-btn {
+  background: #ff9500;
+}
