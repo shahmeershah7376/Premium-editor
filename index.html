@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FreeCap - CapCut Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Free Tier -->
+    <div class="editor-free">
+      <h2>Free Editor</h2>
+      <video id="preview" controls></video>
+      <input type="file" id="upload" accept="video/*">
+      <div class="tools">
+        <button onclick="trimVideo()">Trim</button>
+        <button onclick="addText()">Text</button>
+        <button class="pro-locked">Filters (Pro)</button>
+      </div>
+    </div>
+
+    <!-- $1 Pro Tier -->
+    <div class="editor-pro">
+      <h2>Pro Editor ($1 Unlock)</h2>
+      <button id="upgrade-btn">Upgrade Now</button>
+      <div class="pro-features">
+        <button onclick="addFilters()">50+ Filters</button>
+        <button onclick="greenScreen()">Green Screen</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
